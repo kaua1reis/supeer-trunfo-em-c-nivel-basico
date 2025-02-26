@@ -1,0 +1,21 @@
+// cartas.h
+#ifndef CARTAS_H
+#define CARTAS_H
+
+// Definição das variáveis e funções para o jogo
+extern char estado1, estado2;
+extern char codigo1[5], codigo2[5];
+extern char cidade1[50], cidade2[50];
+extern unsigned long int populacao1, populacao2;
+extern float area1, area2, pib1, pib2;
+extern int pontos1, pontos2;
+
+extern float densidade1, densidade2, pibPerCapita1, pibPerCapita2;
+extern float superPoder1, superPoder2;
+
+void lerDadosCarta1();
+void lerDadosCarta2();
+void calcularAtributos();
+void compararAtributos();
+
+#endif
